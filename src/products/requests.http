@@ -1,0 +1,10 @@
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+  "productname": "WashingMachine",
+  "price": 5000,
+  "sku": "ABC1",
+  "tax": 550,
+  "quantity": 10
+}

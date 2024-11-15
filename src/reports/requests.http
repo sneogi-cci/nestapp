@@ -1,0 +1,24 @@
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+  "make": "Mercedes",
+  "model": "Benz",
+  "year": 1982,
+  "mileage": 20000,
+  "lng": 45,
+  "lat": 45,
+  "price": 15000
+}
+
+### Approve an existing report
+PATCH http://localhost:3000/reports/16
+content-type: application/json
+
+{
+  "approved": true
+}
+
+###Get estimate for existing Vehicle
+
+GET http://localhost:3000/reports?make=Mercedes&model=Benz&lng=45&lat=45&mileage=20000&year=1981
