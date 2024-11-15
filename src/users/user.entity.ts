@@ -24,9 +24,6 @@ export class User {
   @Column({ default: true })
   admin: boolean;
 
-  @Column()
-  profileImageUrl: string;
-
   @OneToMany(() => Report, (report) => report.user)
   reports: Report[];
 
