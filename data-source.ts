@@ -4,7 +4,7 @@ export const dataSourceOptions: DataSourceOptions = {
   host: 'localhost',
   database: 'mycv',
   port: 5432,
-  password: 'admin',
+  password: '0^C$fLva248pJuRO',
   username: 'postgres',
   entities: ['**/*.entity.js'],
   synchronize:true,
